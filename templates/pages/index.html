@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{%block content%}
+<form method="POST">
+    {% csrf_token %}
+
+{% comment %}
+<br>
+<br>
+<input type="text" name="username" placeholder="user name ">
+<br>
+<br>
+<input type="password" name="password" placeholder="password">
+<br>
+<br>
+{%endcomment%}
+{{lf}}
+    <input type="submit" value="save">  
+</form>
+{%endblock content%}

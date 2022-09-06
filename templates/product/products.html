@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content%}
+{% for pro in pro %}
+<h1> {{pro.name }}</h1>
+<h2>{{pro.price }}</h2>
+<img src="{{pro.image.url}}" alt="">
+{% endfor %}
+{%endblock content%}
